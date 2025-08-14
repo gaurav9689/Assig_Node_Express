@@ -20,9 +20,9 @@ This project implements a simple RESTful API using **Node.js** and **Express** f
 ```json
 {
   "id": "1",
-  "firstName": "Anshika",
-  "lastName": "Agarwal",
-  "hobby": "Teaching"
+  "firstName": "Gaurav",
+  "lastName": "Chikate",
+  "hobby": "Software Developer"
 }
 ```
 

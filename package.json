@@ -1,0 +1,22 @@
+{
+  "name": "user-api-assignment",
+  "version": "1.0.0",
+  "description": "Simple RESTful API for managing users using Node.js and Express (assignment-ready).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "rest",
+    "api",
+    "assignment",
+    "users"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

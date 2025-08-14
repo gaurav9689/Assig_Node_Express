@@ -1,0 +1,121 @@
+{
+  "info": {
+    "name": "User API (Assignment)",
+    "_postman_id": "f1c3d3a4-1234-5678-90ab-userapi",
+    "description": "Postman collection for User REST API using Node.js and Express.js",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET All Users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET User By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/users/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST Add User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"3\",\n  \"firstName\": \"Priya\",\n  \"lastName\": \"Sharma\",\n  \"hobby\": \"Cooking\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/user",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT Update User",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Priyanka\",\n  \"lastName\": \"Sharma\",\n  \"hobby\": \"Traveling\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/user/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user",
+            "3"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE User",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/user/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user",
+            "3"
+          ]
+        }
+      }
+    }
+  ]
+}
